@@ -1,0 +1,39 @@
+---
+
+import { Image, Picture } from '@astrojs/image/components';
+
+import img0 from '../icons/0.png';
+import img7 from '../icons/Green.png';
+import img1 from '../icons/1.svg';
+import tt from '../components/ff.png'
+import yy from '../icons/3.svg'
+import { Icon } from 'astro-icon'
+---
+<div class="relative">
+  <Image
+    src={img1}
+    alt="A picture of a cat"
+    width={1450}
+    height={200}
+  />
+  
+  <div class="absolute inset-0 flex flex-col items-center justify-center ">
+    <h1 class="text-4xl font-bold mb-4">Green Living Guide</h1>
+    <p class="text-xl mb-6">A blog committed to sustainable living, eco-friendly practices, and tips for a greener lifestyle</p>
+    <p class="text-lg mb-4">Discover practical ways to reduce your carbon footprint, conserve energy, recycle effectively, and make conscious choices that benefit the planet.</p>
+    <p class="text-lg mb-6">Join us on this journey towards a greener future!</p>
+    <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
+  <div class="flex justify-center absolute bottom-3 -ml-7">
+    <Image
+      src={yy}
+      alt="A picture of a cat"
+      width={700}
+      height={50}
+      class="rounded-md animate-pulse"
+    />
+  </div>
+</div>
+
+
+
+
