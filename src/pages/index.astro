@@ -3,35 +3,72 @@
 import Layout from '../layouts/Layout.astro';
 import {getCollection} from 'astro:content'
 const blogPosts=await getCollection("blog")
-
+import { Icon } from 'astro-icon';
 import { Image, Picture } from '@astrojs/image/components';
 
 import img0 from '../icons/0.png';
 import img7 from '../icons/Green.png';
-import img1 from '../icons/1.svg';
+import about from '../icons/About.png';
 
 
 
 
 ---
 <Layout title="home">
-  <div class="relative">
-  <Image
-    src={img1}
-    alt="A picture of a cat"
-    width={1500}
-    height={100}
-  />
-  
-  <div class="absolute inset-0 flex flex-col items-center justify-center ">
-    <h1 class="text-4xl font-bold mb-4">Green Living Guide</h1>
-    <p class="text-xl mb-6">A blog committed to sustainable living, eco-friendly practices, and tips for a greener lifestyle</p>
-    <p class="text-lg mb-4">Discover practical ways to reduce your carbon footprint, conserve energy, recycle effectively, and make conscious choices that benefit the planet.</p>
-    <p class="text-lg mb-6">Join us on this journey towards a greener future!</p>
+<div class="relative">
+  <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Tailblocks</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+   <a class="mr-5 hover:text-gray-900">Home</a>
+        <a class="mr-5 hover:text-gray-900">Explore</a>
+        <a class="mr-5 hover:text-gray-900">Tips</a>
+        <a class="mr-5 hover:text-gray-900">Contact</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+  <Icon name="fahad" class="w-full" />
+
+  <div class="absolute md:inset-32 inset-44 flex flex-col items-center justify-cente ">
+    <h1 class="md:text-5xl font-bold text-2xl italic text-green-500">Green Living Guide</h1>
+    <h1 class="text-xl mt-4 italic font-semibold">A blog committed to sustainable living and tips for a greener lifestyle</h1>
+
+    <h2 class="text-xl italic mb-7 font-black">Join us on this journey towards a greener future!</h2>
     <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
   </div>
 </div>
 
+
+    <div class="container mx-auto px-4 mt-16">
+
+  <div class="flex flex-col md:flex-row items-center justify-center -mb-32">
+    <div class="w-full md:w-1/2">
+      <Image 
+        src={about} 
+        alt="about"
+        width={1000}
+        height={1000}
+      />
+    </div>
+    <div class="w-full md:w-1/2">
+      <h3 class="text-4xl font-semibold mb-4 text-[#00bf63]">Green Living Guide</h3>
+      <p class="text-lg italic">Green Living Guide is your go-to resource for all things sustainable living. We are committed to providing valuable information, tips, and resources to help you embrace a greener lifestyle.</p>
+      <p class="text-lg italic">Our mission is to promote environmentally friendly practices, raise awareness about the importance of sustainability, and inspire individuals to make conscious choices that contribute to a healthier planet.</p>
+    </div>
+  </div>
+</div>
+
+        
   {
     blogPosts.map((post) => (
       <div
