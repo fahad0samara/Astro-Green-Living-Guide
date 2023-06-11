@@ -7,71 +7,24 @@ import { Icon } from 'astro-icon';
 import { Image, Picture } from '@astrojs/image/components';
 import About from '../components/About.astro'
 import Blog from '../pages/blog/Blog.astro'
+import Header from '../components/Header.astro';
 ---
+
 <Layout title="home">
 <div class="relative">
-  <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <Icon
-        name="logo"
-        class="w-12 h-12 text-white p-2 bg-black  rounded-full"
-      />
-      
-
-      
-      <span class="ml-3 text-xl">Living Guide</span>
-    </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-   <a
-    href="/"
-    class="mr-5
-   font-semibold
-   italic
-    hover:cursor-pointer
-    hover:text-green-500
-
-   ">Home</a>
-       <a
-    href="/blog/Blog"
-    class="mr-5
-   font-semibold
-   italic
-    hover:cursor-pointer
-    hover:text-green-500
-
-   ">
-    Blog
-
-  </a>
-
-       
-  <a
-    href="/Contant"
-    class="mr-5
-   font-semibold
-   italic
-    hover:cursor-pointer
-    hover:text-green-500
-
-   ">
-   contant us
-    
-  </a>
-    </nav>
+  <Header/>
  
-  </div>
-</header>
-  <Icon name="fahad" class="w-full" />
+  <Icon name="fahad" class="w-full hidden md:flex" />
 
-  <div class="absolute md:inset-32 inset-44 flex flex-col items-center justify-cente ">
+  <div class="md:absolute md:inset-32 px-5 flex flex-col items-center justify-cente ">
     <h1 class="md:text-5xl font-bold text-2xl italic text-green-500">Green Living Guide</h1>
-    <h1 class="text-xl mt-4 italic font-semibold">A blog committed to sustainable living and tips for a greener lifestyle</h1>
+    <h1 class="md:text-xl text-lg text-center mt-4 italic font-semibold">A blog committed to sustainable living and tips for a greener lifestyle</h1>
 
-    <h2 class="text-xl italic mb-7 font-black">Join us on this journey towards a greener future!</h2>
-    <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
+    <h2 class="md:text-xl text-lg italic mb-7 text-center font-black">Join us on this journey towards a greener future!</h2>
+    <a href="/blog/Blog" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
   </div>
 </div>
+
 
 
 <About/>
