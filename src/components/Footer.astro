@@ -1,5 +1,59 @@
 ---
 import { Icon } from 'astro-icon';
+
 ---
 
- <Icon name="Footer" class="w-full" />
+
+
+
+
+
+
+    <footer class="bg-gradient-to-b from-green-400 to-green-500 rounded-lg shadow-lg p-8 relative">
+  
+      <div class="max-w-screen-xl mx-auto relative z-10">
+        <div class="flex  justify-between mb-8 md:flex-row flex-col items-center">
+          <div>
+             <a href="/"
+          class="flex items-center mb-2">
+               <Icon name="logo"
+                          class="h-14 w-14 items-center rounded-full"
+
+                           />
+            <span class="text-xl font-semibold text-white mt-1 ml-3">
+                Green Living Guide
+       
+            </span>
+          </a>
+          </div>
+         
+          <ul class="flex flex-wrap  space-x-4 text-sm font-medium items-center">
+            <li
+              class="text-white mb-4"
+            >
+            
+
+          <a href="/blog/Blog" class="mr-5 hover:text-black font-bold">
+            Article
+        </a>
+<a href="/about" class="mr-5 hover:text-black font-bold">Home</a>
+<a href="/Contact" class="mr-5 hover:text-black font-bold">Contact</a>
+</li>
+          </ul>
+        </div>
+     
+
+        <div class="items-center text-base text-center text-white sm:text-current   mb-12 sm:my-0">
+          <h1 class="text-white">
+            © 2023{" "}
+            <a 
+            href="/"
+             class="hover:underline text-white underline-offset-1">
+
+            Green Living Guide
+            </a>
+          
+          </h1>
+        </div>
+      </div>
+    </footer>
