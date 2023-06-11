@@ -1,1 +1,2 @@
-# Astro Starter Kit: Basics
+
+## Astro Starter 
