@@ -1,9 +1,10 @@
 ---
 import {getCollection} from 'astro:content'
 const blogPosts=await getCollection("blog")
+import { Icon } from 'astro-icon';
 ---
 
-<section class="bg-white py-6 sm:py-8 lg:py-12">
+<section class="bg-white py-6 sm:py-8 lg:py-12 relative">
   <div class="mx-auto max-w-screen-xl px-4 md:px-8">
     <!-- Heading -->
     <div class="mb-10 md:mb-16">
@@ -11,31 +12,40 @@ const blogPosts=await getCollection("blog")
       <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Discover sustainable living tips and practices to protect the environment and reduce your carbon footprint.</p>
     </div>
     <!-- /Heading -->
-    <div class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
-      {blogPosts.map((post) => (
-        <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-          <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
-            {post.data.image && (
-              <img class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" src={post.data.image.src} alt={post.data.image.alt} />
-            )}
+ <!-- /Heading -->
+<div class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+  {blogPosts.map((post) => (
+    <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6 relative shadow-md">
+      <a href="#" class="group relative block h-56 w-full max-w-lg shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
+        {post.data.image && (
+          <img class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" src={post.data.image.src} alt={post.data.image.alt} />
+        )}
+      </a>
+
+      <div class="flex flex-col gap-2">
+        <span class="text-sm text-gray-400">{post.data.date}</span>
+        <h2 class="text-xl font-bold text-gray-800">
+          <a href="#" class="transition duration-100 text-green-500 hover:text-rose-500 active:text-rose-600">{post.data.title}</a>
+        </h2>
+        <p class="text-gray-500">{post.data.description}</p>
+        <div>
+          <a href={`/blog/${post.slug}`} class="inline-flex items-center gap-2 text-sm font-medium text-rose-500 transition duration-100 hover:text-rose-600 active:text-rose-700">
+            <span>Read more</span>
+            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M11.293 4.293a1 1 0 010 1.414L8.414 9H11a1 1 0 110 2H7a1 1 0 01-1-1V7a1 1 0 112 0v2.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
           </a>
-          <div class="flex flex-col gap-2">
-            <span class="text-sm text-gray-400">{post.data.date}</span>
-            <h2 class="text-xl font-bold text-gray-800">
-              <a href="#" class="transition duration-100 text-green-500  hover:text-rose-500 active:text-rose-600">{post.data.title}</a>
-            </h2>
-            <p class="text-gray-500">{post.data.description}</p>
-            <div>
-              <a href={`/blog/${post.slug}`} class="inline-flex items-center gap-2 text-sm font-medium text-rose-500 transition duration-100 hover:text-rose-600 active:text-rose-700">
-                <span>Read more</span>
-                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
-                  <path fill-rule="evenodd" d="M11.293 4.293a1 1 0 010 1.414L8.414 9H11a1 1 0 110 2H7a1 1 0 01-1-1V7a1 1 0 112 0v2.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      ))}
-    </div>
+        </div>
+      </div>
+
+      <Icon
+        class="h-36 w-36 absolute md:-top-1 md:right-1 -top-3 -right-1   -mt-8 -mr-8 text-teal-accent-400"
+        name="blog"
+      />
+    </article>
+  ))}
+</div>
+
   </div>
+
 </section>
