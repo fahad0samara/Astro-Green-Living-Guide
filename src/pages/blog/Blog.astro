@@ -13,9 +13,9 @@ import { Icon } from 'astro-icon';
     </div>
     <!-- /Heading -->
  <!-- /Heading -->
-<div class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+<div class="grid gap-6 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
   {blogPosts.map((post) => (
-    <article class="flex flex-col items-center gap-4 md:flex-row lg:gap-6 relative shadow-md">
+    <article class="flex flex-col mx-9 md:mx-1 items-center gap-4 md:flex-row lg:gap-6 relative shadow-md">
       <a href="#" class="group relative block h-56 w-full max-w-lg shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
         {post.data.image && (
           <img class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" src={post.data.image.src} alt={post.data.image.alt} />
@@ -39,7 +39,7 @@ import { Icon } from 'astro-icon';
       </div>
 
       <Icon
-        class="h-36 w-36 absolute md:-top-1 md:right-1 -top-3 -right-1   -mt-8 -mr-8 text-teal-accent-400"
+        class="h-44 w-44 absolute md:-top-3 md:-right-2 -top-1 -right-1   -mt-8 -mr-8 text-teal-accent-400"
         name="blog"
       />
     </article>
