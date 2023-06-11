@@ -7,7 +7,7 @@ const blogPosts=await getCollection("blog")
   <div class="mx-auto max-w-screen-xl px-4 md:px-8">
     <!-- Heading -->
     <div class="mb-10 md:mb-16">
-      <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Green Living Guide</h2>
+      <h2 class="mb-4 text-center text-2xl font-bold text-green-500 md:mb-6 lg:text-3xl">Green Living Guide</h2>
       <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Discover sustainable living tips and practices to protect the environment and reduce your carbon footprint.</p>
     </div>
     <!-- /Heading -->
@@ -22,7 +22,7 @@ const blogPosts=await getCollection("blog")
           <div class="flex flex-col gap-2">
             <span class="text-sm text-gray-400">{post.data.date}</span>
             <h2 class="text-xl font-bold text-gray-800">
-              <a href="#" class="transition duration-100 hover:text-rose-500 active:text-rose-600">{post.data.title}</a>
+              <a href="#" class="transition duration-100 text-green-500  hover:text-rose-500 active:text-rose-600">{post.data.title}</a>
             </h2>
             <p class="text-gray-500">{post.data.description}</p>
             <div>

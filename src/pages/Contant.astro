@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from 'astro-icon';
+---
+
+<Layout
+    title="contant">
+
+ <section class="py-10 bg-green-100 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <a
+            href="/"
+            class="inline-flex items-center justify-center  px-2 py-2 text-base font-semibold text-white transition-all duration-200 bg-green-600 border border-transparent rounded-md focus:outline-none hover:bg-green-700 focus:bg-green-700 sm:w-auto max-w-sm">
+            <Icon
+                name="ph:arrow-left"
+                class="flex-shrink-0 w-4 h-4 mr-2 -ml-1 text-white"
+            />
+            Back to home
+        </a>
+        
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight text-green-900 sm:text-4xl lg:text-5xl">Contact us</h2>
+            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed ">Welcome to the Green Living Guide. We are here to provide you with information and resources for living a sustainable and eco-friendly lifestyle. Whether you have questions, suggestions, or want to learn more about green living practices, feel free to contact us.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto mt-12 sm:mt-16">
+            <div class="grid grid-cols-1 gap-6 px-8 text-center md:px-0 md:grid-cols-3">
+                <div class="overflow-hidden bg-white rounded-xl">
+                    <div class="p-6">
+                        <Icon
+                            name="ph:phone"
+                            class="flex-shrink-0 w-10 h-10 mx-auto text-green-400"
+                        />
+                  
+                        <p class="mt-6 text-lg font-medium text-green-900">+1-316-555-0116</p>
+                      
+                    </div>
+                </div>
+
+                <div class="overflow-hidden bg-white rounded-xl">
+                    <div class="p-6">
+                        <Icon
+                            name="fe:mail"
+                            class="flex-shrink-0 w-10 h-10 mx-auto text-green-400"/>
+                            
+                  
+                        <p class="mt-6 text-lg font-medium text-green-900">contant@Green.com</p>
+            
+                    </div>
+                </div>
+
+                <div class="overflow-hidden bg-white rounded-xl">
+                    <div class="p-6">
+                        <Icon
+                            name="ion:location-outline"
+                            class="flex-shrink-0 w-10 h-10 mx-auto text-green-400"/>
+                       
+                        <p class="mt-6 text-lg font-medium leading-relaxed text-green-900">8502 Preston Rd. Ingle, Maine 98380, USA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 overflow-hidden bg-white rounded-xl">
+                <div class="px-6 py-12 sm:p-12">
+                    <h3 class="text-3xl font-semibold text-center text-green-900">Send us a message</h3>
+
+                    <form action="#" method="POST" class="mt-14">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
+                            <div>
+                                <label for="" class="text-base font-medium text-green-900"> Your name </label>
+                                <div class="mt-2.5 relative">
+                                    <input type="text" name="" id="" placeholder="Enter your full name" class="block w-full px-4 py-4 text-black placeholder-green-500 transition-all duration-200 bg-white border border-green-200 rounded-md focus:outline-none focus:border-green-600 caret-green-600" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-base font-medium text-green-900"> Email address </label>
+                                <div class="mt-2.5 relative">
+                                    <input type="email" name="" id="" placeholder="Enter your email address" class="block w-full px-4 py-4 text-black placeholder-green-500 transition-all duration-200 bg-white border border-green-200 rounded-md focus:outline-none focus:border-green-600 caret-green-600" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-base font-medium text-green-900"> Phone number </label>
+                                <div class="mt-2.5 relative">
+                                    <input type="tel" name="" id="" placeholder="Enter your phone number" class="block w-full px-4 py-4 text-black placeholder-green-500 transition-all duration-200 bg-white border border-green-200 rounded-md focus:outline-none focus:border-green-600 caret-green-600" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-base font-medium text-green-900"> Company name </label>
+                                <div class="mt-2.5 relative">
+                                    <input type="text" name="" id="" placeholder="Enter your company name" class="block w-full px-4 py-4 text-black placeholder-green-500 transition-all duration-200 bg-white border border-green-200 rounded-md focus:outline-none focus:border-green-600 caret-green-600" />
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="" class="text-base font-medium text-green-900"> Message </label>
+                                <div class="mt-2.5 relative">
+                                    <textarea name="" id="" placeholder="Enter your message" class="block w-full px-4 py-4 text-black placeholder-green-500 transition-all duration-200 bg-white border border-green-200 rounded-md resize-y focus:outline-none focus:border-green-600 caret-green-600" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-green-600 border border-transparent rounded-md focus:outline-none hover:bg-green-700 focus:bg-green-700">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+</Layout>
+  
