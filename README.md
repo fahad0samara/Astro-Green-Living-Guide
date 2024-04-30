@@ -3,6 +3,10 @@
 # Astro Green Living Guide
 
 Welcome to the Astro Green Living Guide repository! This project is a blog committed to sustainable living and providing tips for a greener lifestyle. Whether you're interested in eco-friendly practices, sustainable energy sources, waste reduction, or green home improvements, this blog has got you covered.
+![astro0](https://github.com/fahad0samara/Astro-Green-Living-Guide/assets/90055525/ed6f2563-60f6-4603-84af-b5d229a85bea)
+
+
+
 
 ## Features
 
