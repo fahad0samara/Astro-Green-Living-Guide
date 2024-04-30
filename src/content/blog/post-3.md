@@ -1,20 +1,38 @@
 ---
-title: The Ultimate Green Living Guide
+title: "Introduction to Nature-Friendly Living"
 date: 2022-11-20
 author: Fahad
-image: {
-  src: "https://images.unsplash.com/photo-1639771720707-9641613fa9a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-  alt: "A picture of a sustainable lifestyle",
-}
-description: Discover the key principles and practices for living a sustainable and eco-friendly life.
-draft: false
-category: Green Living
+image: "nature-friendly-living.jpg"
 ---
 
-# Markdown Example
+<div class="items-center ml-9">
+  <div class="text-center text-4xl font-bold text-green-600">The Ultimate Nature-Friendly Living Guide: Introduction</div>
 
-# Heading level 1
+  <div class="mx-auto max-w-3xl">
+    <img src="/nature-friendly-living.jpg" alt="Nature-Friendly Living" class="mt-8 mb-12 rounded-lg shadow-lg">
+  </div>
 
-This is my first blog post. I hope you like it!
+  <p class="text-lg text-gray-800 leading-relaxed">
+    Embracing a nature-friendly lifestyle not only benefits the environment but also connects you with the natural world. In this ultimate nature-friendly living guide, we will explore various ways to live in harmony with nature and minimize your ecological footprint.
+  </p>
 
-![Image Alt Text](https://images.unsplash.com/photo-1685945719932-8048cbc68ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60)
+  ## <div class="text-2xl font-semibold text-green-600">Why Choose Nature-Friendly Living?</div>
+
+  <p class="text-lg text-gray-800 leading-relaxed">
+    Choosing a nature-friendly lifestyle helps protect biodiversity, preserves natural habitats, and fosters a deeper connection with the Earth. By incorporating nature-friendly practices into your daily life, you can contribute to the conservation of ecosystems and ensure a healthier planet for future generations.
+  </p>
+
+  ## <div class="text-2xl font-semibold text-green-600">What to Expect in This Guide</div>
+
+  <ul class="list-disc list-inside text-lg text-gray-800 leading-relaxed">
+    <li>Exploring ways to reduce your environmental impact</li>
+    <li>Creating wildlife-friendly spaces in your community</li>
+    <li>Learning about sustainable gardening and landscaping</li>
+    <li>Discovering eco-conscious practices for outdoor recreation</li>
+    <li>Understanding the importance of nature conservation and restoration</li>
+  </ul>
+
+  <p class="text-lg text-gray-800 leading-relaxed mt-8">
+    Join us on this journey to discover how you can live in harmony with nature and become a steward of the Earth.
+  </p>
+</div>

@@ -1,20 +1,38 @@
 ---
-title: The Ultimate Green Living Guide
+title: "Introduction to Eco-Friendly Living"
 date: 2022-11-20
 author: Fahad
-image: {
-  src: "https://images.unsplash.com/photo-1631009629059-5bba83f1410c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80",
-  alt: "A picture of a sustainable lifestyle",
-}
-description: Discover the key principles and practices for living a sustainable and eco-friendly life.
-draft: false
-category: Green Living
+image: "eco-friendly-living.jpg"
 ---
 
-# Markdown Example
+<div class="items-center ml-9">
+  <div class="text-center text-4xl font-bold text-green-600">The Ultimate Eco-Friendly Living Guide: Introduction</div>
 
-# Heading level 1
+  <div class="mx-auto max-w-3xl">
+    <img src="/eco-friendly-living.jpg" alt="Eco-Friendly Living" class="mt-8 mb-12 rounded-lg shadow-lg">
+  </div>
 
-This is my first blog post. I hope you like it!
+  <p class="text-lg text-gray-800 leading-relaxed">
+    Embracing an eco-friendly lifestyle not only benefits the environment but also promotes sustainability and reduces waste. In this ultimate eco-friendly living guide, we will explore various ways to minimize your ecological footprint and live more sustainably.
+  </p>
 
-![Image Alt Text](https://images.unsplash.com/photo-1685945719932-8048cbc68ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60)
+  ## <div class="text-2xl font-semibold text-green-600">Why Choose Eco-Friendly Living?</div>
+
+  <p class="text-lg text-gray-800 leading-relaxed">
+    Choosing an eco-friendly lifestyle helps reduce carbon emissions, conserves natural resources, and minimizes pollution. By adopting eco-conscious practices, you can contribute to a healthier planet and create a more sustainable future for all.
+  </p>
+
+  ## <div class="text-2xl font-semibold text-green-600">What to Expect in This Guide</div>
+
+  <ul class="list-disc list-inside text-lg text-gray-800 leading-relaxed">
+    <li>Exploring renewable energy options for your home</li>
+    <li>Embracing zero-waste living and reducing single-use plastics</li>
+    <li>Choosing eco-friendly alternatives for transportation and travel</li>
+    <li>Implementing sustainable practices for food production and consumption</li>
+    <li>Transforming your living space into an eco-friendly oasis</li>
+  </ul>
+
+  <p class="text-lg text-gray-800 leading-relaxed mt-8">
+    Join us on this journey to discover how you can live more sustainably and make a positive impact on the environment.
+  </p>
+</div>
